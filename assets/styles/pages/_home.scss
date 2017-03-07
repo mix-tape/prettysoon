@@ -1,0 +1,109 @@
+// --------------------------------------------------------------------------
+//
+//   Home Page
+//
+// --------------------------------------------------------------------------
+
+@keyframes background-transition {
+  0% { background-color: $white; }
+  17% { background-color: $light-gray; }
+  34% { background-color: $green; }
+  51% { background-color: $yellow; }
+  68% { background-color: $purple; }
+  83% { background-color: $pink; }
+  100% { background-color: $white; }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  animation-name: background-transition;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+
+  transition: background-color 1000ms;
+}
+
+
+// --------------------------------------------------------------------------
+//   About
+// --------------------------------------------------------------------------
+
+.about {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 10px;
+  text-align: center;
+}
+
+
+// --------------------------------------------------------------------------
+//   Footer
+// --------------------------------------------------------------------------
+
+.footer {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  bottom: 15px;
+
+  text-align: center;
+}
+
+
+// --------------------------------------------------------------------------
+//   Logo Thing
+// --------------------------------------------------------------------------
+
+.pee {
+  position: absolute;
+  left: 10px;
+  top: calc(50vh - 60px);
+  height: 120px;
+
+  @include media($mobile-down) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    width: auto;
+  }
+}
+
+.ess {
+  position: absolute;
+  right: 0px;
+  top: calc(50vh - 60px);
+  height: 120px;
+
+  @include media($mobile-down) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 100px;
+    width: auto;
+  }
+}
+
+.line {
+  display: block;
+  position: absolute;
+  top: calc(50vh - 60px);
+  transform: translateY(50px);
+  width: calc(100vw - 320px);
+  left: 150px;
+  height: 15px;
+
+  background-color: #141414;
+
+  @include media($mobile-down) {
+    left: 48vw;
+    top: 200px;
+    width: 16px;
+    height: calc(100vh - 500px);
+  }
+}

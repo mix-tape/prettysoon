@@ -1,0 +1,100 @@
+// --------------------------------------------------------------------------
+//
+//  Type
+//    Default typographic styles and elements
+//
+// --------------------------------------------------------------------------
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-size-adjust: auto;
+  line-height: 1.6;
+
+  text-align: left;
+  word-wrap: break-word;
+
+  color: $base-body-color;
+
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+
+  @include media($mobile-down) {
+    font-size: 14px;
+  }
+}
+
+
+// --------------------------------------------------------------------------
+//   Headings
+// --------------------------------------------------------------------------
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h5 + h6 {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $base-heading-color;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+h4 { font-size: 16px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+@include media($mobile-down) {
+
+  h1 { font-size: 24px; }
+  h2 { font-size: 7vw; margin-bottom: 0.7em; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 14px; }
+  h5 { font-size: 14px; }
+  h6 { font-size: 14px; }
+
+}
+
+
+// --------------------------------------------------------------------------
+//   Content Elements
+// --------------------------------------------------------------------------
+
+a {
+  color: $base-link-color;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $base-link-hover;
+  }
+}
+
+.no-line {
+  text-decoration: none;
+}
+
+strong {
+  color: $white;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

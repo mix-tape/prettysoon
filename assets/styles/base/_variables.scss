@@ -1,0 +1,43 @@
+// --------------------------------------------------------------------------
+//
+//   Variables
+//
+// --------------------------------------------------------------------------
+
+
+// ----- Colours ----- //
+
+$black:               #151515;
+$charcoal:            #6f6f6f;
+$dark-gray:           #999999;
+$gray:                #dadada;
+
+$red:                 #d78f8e;
+$blue:                #74a9cf;
+
+
+// Brand Colours
+
+$white:               #ffffff;
+$light-gray:          #C1C6C4;
+$green:               #7F9065;
+$yellow:              #FFE087;
+$purple:              #9A87A4;
+$pink:                #FFC9BE;
+
+
+// ----- Typography ----- //
+
+$base-body-color:     $black;
+$base-heading-color:  $white;
+
+$base-link-color:     $black;
+$base-link-hover:     $black;
+
+$base-border-color:   $gray;
+$base-border-radius:  2px;
+
+
+// ----- Transitions ----- //
+
+$navigation-transition: all 500ms $ease-in-out-quad;
